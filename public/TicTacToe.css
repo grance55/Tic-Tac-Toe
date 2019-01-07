@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container{
+    width: 300px;
+    overflow: hidden;
+    margin: 50px auto 0 auto;
+    margin: auto;
+}
+
+.container .box{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    font-size: 75px;
+    color: #555;
+    text-align: center;
+    cursor: pointer ;
+}
+#box1{
+    border-left: none;
+    border-top: none;
+}
+#box2{
+    border-top: none;
+}
+#box3{
+    border-right: none;
+    border-top: none;
+}
+#box4{
+    border-left: none;
+}
+#box6{
+    border-right: none;
+}
+#box7{
+    border-left: none;
+    border-bottom: none;
+}
+#box8{
+    border-bottom: none;
+}
+#box9{
+    border-right: none;
+    border-bottom: none;
+}
+button {
+    width: 100%;
+    margin: 50px auto 50px auto;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    width: 50%;
+    margin: 30px auto 80px auto;
+}
+.colon{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.player-0, .player-1{
+    text-align: center;
+    width: 170px;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+.playerScore-1, .playerScore-0{
+    display: block;
+    width: 100px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    
+}
+.active{
+    border-bottom: 2px solid #555;
+    /*
+    transition-duration: 5s;
+    */
+    
+}
+.RoundWinner{
+    color: #EB4D4D;
+    font-weight: bold;
+}
+
+.final-score{
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.final-score:focus{ outline: none; }
+
+
+.nextRound{
+    margin-top: 70px;   
+}
